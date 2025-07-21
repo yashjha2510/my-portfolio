@@ -1,3 +1,4 @@
+/* universal classes */
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +10,14 @@ body {
   font-family: sans-serif;
 }
 
+/* utility classes */
+.purple {
+  color: #b487d3;
+}
+
+.gray {
+  color: gray;
+}
 /* header */
 nav {
   display: flex;
@@ -28,6 +37,17 @@ nav ul li {
   margin-right: 20px;
 }
 
+nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li a:hover{
+  color: rgb(183, 183, 240);
+  display: inline-block;
+  transform:  scale(1.2);
+}
+
 .left {
   font-size: 1.5rem;
 }
@@ -36,15 +56,36 @@ nav ul li {
 .firstsection {
   display: flex;
   justify-content: space-around;
-  margin: 23px 0;
+  align-items: center;
+  margin: 30px 0;
 }
 
-.firstsection div{
+.firstsection >div{  /* this > will used to apply the changes only 1st div */
   width: 30%;
-  /* background-color: red; */
 }
 
-/* .leftsection {
-  background-color: red;
-  width: 40px;
-} */
+.leftsection {
+  font-size: 2.5rem;
+}
+
+.rightsection img {
+  width: 100%;
+}
+
+main hr {
+  border: 0;
+  height: 2px;
+  background-color: white;
+  margin: 80px 70px;
+}
+
+/* main-secondsection */
+.secondsection {
+  max-width: 80vw;
+  margin: auto;
+  height: 80vh;
+}
+
+.secondsection h1 {
+  font-size: 2rem;
+}
