@@ -1,56 +1,50 @@
-/* Reset default styles */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  line-height: 1.6;
-  background-color: #f5f5f5;
-  color: #333;
+  background-color: #031D44;
+  color: white;
+  font-family: sans-serif;
 }
 
-/* Navbar */
+/* header */
 nav {
-  background: #2c3e50;
-  color: #ecf0f1;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 15px 30px;
-}
-
-nav h1 {
-  font-size: 24px;
+  height: 80px;
+  background-color: #04395E;
 }
 
 nav ul {
   display: flex;
-  list-style: none;
+  justify-content: center;
 }
 
 nav ul li {
-  margin-left: 25px;
+  list-style: none;
+  margin-right: 20px;
 }
 
-nav ul li a {
-  color: #ecf0f1;
-  text-decoration: none;
-  font-weight: 500;
+.left {
+  font-size: 1.5rem;
 }
 
-nav ul li a:hover {
-  color: #1abc9c;
+/* main-firstsection */
+.firstsection {
+  display: flex;
+  justify-content: space-around;
+  margin: 23px 0;
 }
 
-/* Sections */
-section {
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: auto;
-  background: #fff;
-  margin-top: 20px;
-  border-radius: 8p
+.firstsection div{
+  width: 30%;
+  /* background-color: red; */
 }
+
+/* .leftsection {
+  background-color: red;
+  width: 40px;
+} */
