@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* Added for better responsiveness */
 }
 
 body {
@@ -24,6 +25,7 @@ header {
   display: flex;
   justify-content: center;
   margin-top: 30px;
+  padding: 0 10px; /* Added padding for small screens */
 }
 
 nav {
@@ -32,6 +34,7 @@ nav {
   align-items: center;
   height: 80px;
   width: 85vw;
+  max-width: 1200px; /* Added max-width for large screens */
   background-color: #032c49;
   border-radius: 100px;
 }
@@ -67,21 +70,28 @@ nav ul li a:hover {
   justify-content: space-around;
   align-items: center;
   margin: 30px 0;
+  padding: 0 20px; /* Added padding */
+  flex-wrap: wrap; /* Allow wrapping on small screens */
 }
 
-.firstsection>div {
+.firstsection > div {
   /* this > will used to apply the changes only 1st div */
-  width: 30%;
+  flex: 1; /* Changed to flex for responsiveness */
+  min-width: 300px; /* Minimum width to prevent too small */
+  padding: 20px;
 }
 
 .leftsection {
   font-size: 2.5rem;
+  text-align: center; /* Center on mobile */
 }
 
 .rightsection img {
   width: 100%;
   /* height: 30rem; */
   border-radius: 80%;
+  max-width: 400px; /* Limit max size */
+  height: auto; /* Ensure aspect ratio */
 }
 
 main hr {
@@ -102,11 +112,13 @@ main hr {
 .secondsection {
   max-width: 80vw;
   margin: auto;
-  height: 80vh;
+  height: auto; /* Changed from fixed 80vh to auto for responsiveness */
+  padding: 20px; /* Added padding */
 }
 
 .secondsection h1 {
   font-size: 2rem;
+  text-align: center; /* Center headings */
 }
 
 .secondsection .horizontalline {
@@ -127,12 +139,17 @@ main hr {
 /* footer */
 footer {
   background-color: #032c49;
-  height: 20%;
+  height: auto; /* Changed to auto */
+  padding: 20px 0;
 }
 
 .footer-div {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap; /* Allow wrapping */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .footer ul {
@@ -141,6 +158,10 @@ footer {
 
 .footer-div > div {
   width: 300px;
+  flex: 1; /* Flexible width */
+  min-width: 250px;
+  text-align: center;
+  margin: 10px;
 }
 
 footer .footer-rights {
@@ -178,4 +199,135 @@ footer .footer-rights {
   color: #bebebe;
   font-size: 0.9rem;
   line-height: 1.4;
+}
+
+/* Responsive Media Queries - New additions for responsiveness */
+
+/* Mobile devices (up to 768px) */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack nav vertically */
+    height: auto;
+    width: 90vw;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .left {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+
+  .firstsection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .firstsection > div {
+    width: 100%;
+    min-width: auto;
+  }
+
+  .leftsection {
+    font-size: 1.8rem; /* Smaller font on mobile */
+    margin-bottom: 20px;
+  }
+
+  .rightsection img {
+    border-radius: 50%; /* Keep circular but adjust */
+    max-width: 250px;
+  }
+
+  main hr,
+  .hrline {
+    margin: 40px 20px; /* Smaller margins */
+  }
+
+  .secondsection {
+    max-width: 95vw;
+    padding: 10px;
+  }
+
+  .secondsection h1 {
+    font-size: 1.5rem;
+  }
+
+  .secondsection .horizontalline {
+    width: 95vw;
+  }
+
+  .projects-container {
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 20px;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+
+  .project-card p {
+    font-size: 0.85rem;
+  }
+
+  .footer-div {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-div > div {
+    width: 100%;
+    min-width: auto;
+    margin: 5px 0;
+  }
+
+  footer .footer-rights {
+    padding: 20px 10px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet devices (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  nav {
+    width: 90vw;
+  }
+
+  .firstsection > div {
+    flex: 1 1 45%; /* Equal split on tablet */
+  }
+
+  .leftsection {
+    font-size: 2.2rem;
+  }
+
+  .projects-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+  }
+
+  .secondsection .horizontalline {
+    width: 90vw;
+  }
+
+  main hr,
+  .hrline {
+    margin: 60px 40px;
+  }
+}
+
+/* Large desktop (above 1024px) - mostly existing styles */
+@media (min-width: 1025px) {
+  /* Existing desktop styles are fine, no major changes needed */
+  .projects-container {
+    gap: 40px;
+  }
 }
