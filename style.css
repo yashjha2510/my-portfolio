@@ -201,12 +201,11 @@ footer .footer-rights {
   line-height: 1.4;
 }
 
-/* Responsive Media Queries - New additions for responsiveness */
+/* responsiveness */
 
-/* Mobile devices (up to 768px) */
 @media (max-width: 768px) {
   nav {
-    flex-direction: column; /* Stack nav vertically */
+    flex-direction: column; 
     height: auto;
     width: 90vw;
     padding: 20px;
@@ -238,18 +237,19 @@ footer .footer-rights {
   }
 
   .leftsection {
-    font-size: 1.8rem; /* Smaller font on mobile */
+    font-size: 1.8rem; 
     margin-bottom: 20px;
   }
 
+  
   .rightsection img {
-    border-radius: 50%; /* Keep circular but adjust */
+    border-radius: 50%; 
     max-width: 250px;
   }
 
   main hr,
   .hrline {
-    margin: 40px 20px; /* Smaller margins */
+    margin: 40px 20px; 
   }
 
   .secondsection {
@@ -264,9 +264,10 @@ footer .footer-rights {
   .secondsection .horizontalline {
     width: 95vw;
   }
+  
 
   .projects-container {
-    grid-template-columns: 1fr; /* Single column on mobile */
+    grid-template-columns: 1fr; 
     gap: 20px;
   }
 
@@ -295,14 +296,13 @@ footer .footer-rights {
   }
 }
 
-/* Tablet devices (769px to 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
   nav {
     width: 90vw;
   }
 
   .firstsection > div {
-    flex: 1 1 45%; /* Equal split on tablet */
+    flex: 1 1 45%; 
   }
 
   .leftsection {
@@ -324,10 +324,9 @@ footer .footer-rights {
   }
 }
 
-/* Large desktop (above 1024px) - mostly existing styles */
 @media (min-width: 1025px) {
-  /* Existing desktop styles are fine, no major changes needed */
   .projects-container {
     gap: 40px;
   }
 }
+
