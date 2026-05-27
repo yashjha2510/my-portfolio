@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,151 +6,295 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yash Jha | Portfolio</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
+
+  <!-- HEADER -->
   <header>
     <nav>
-      <div class="left">Yash Jha's Portfolio</div>
-      <div class="right">
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Contact Me</a></li>
-        </ul>
-      </div>
+      <div class="logo">Yash Jha</div>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
+  <!-- MAIN -->
   <main>
-    <section class="firstsection">
 
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
 
-      <div class="leftsection">Hi, My name is 
-        <div class="purple">Yash Jha</div>
-        <div>and I am a passionate</div>
-        <!-- <div>Web Developer</div> -->
-        <span id="element" class="purple"></span>
-        <div class="site-container">
+      <div class="hero-left">
+        <h1>
+          Hi, I'm <span class="purple">Yash Jha</span>
+        </h1>
+
+        <p>
+          MCA Student | Java Developer | Aspiring Full Stack Developer
+        </p>
+
+        <span id="element" class="typing-text"></span>
+
+        <div class="hero-buttons">
+          <a href="resume.pdf" class="btn" download>
+            Download Resume
+          </a>
+
+          <a href="#contact" class="btn btn-outline">
+            Contact Me
+          </a>
+        </div>
+
+        <div class="social-icons">
           <a href="https://www.linkedin.com/in/yashjha2510/" target="_blank">
             <i class="fa-brands fa-linkedin"></i>
           </a>
+
           <a href="https://github.com/yashjha2510" target="_blank">
-            <i class="fa-brands fa-square-github"></i>
+            <i class="fa-brands fa-github"></i>
           </a>
         </div>
       </div>
 
-      <div class="rightsection">
-        <img src="bg.png" alt="developer image">
+      <div class="hero-right">
+        <img src="my img/my-img6.png" alt="Developer Image">
       </div>
 
     </section>
-    <hr class="hrline">
 
-    <section class="secondsection">
-      <span class="gray">What I have done so far...</span>
-      <h1>Projects</h1>
+    <hr>
 
-      <div class="horizontalline"></div>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
 
-      <!-- Projects Grid Start -->
+      <span class="section-subtitle">Get To Know Me</span>
+      <h2 class="section-title">About Me</h2>
+
+      <div class="about-container">
+        <p>
+          I am an MCA student passionate about Java backend development and modern web technologies.
+          I enjoy building scalable applications using Java, Spring Boot, MySQL, HTML, CSS, and JavaScript.
+          Currently, I am improving my problem-solving skills and building real-world projects.
+        </p>
+      </div>
+
+    </section>
+
+    <hr>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section">
+
+      <span class="section-subtitle">Technologies I Work With</span>
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-container">
+
+        <div class="skill-card">Java</div>
+        <div class="skill-card">Spring Boot</div>
+        <div class="skill-card">MySQL</div>
+        <div class="skill-card">Hibernate</div>
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Git & GitHub</div>
+
+      </div>
+
+    </section>
+
+    <hr>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+
+      <span class="section-subtitle">What I Have Built</span>
+      <h2 class="section-title">Projects</h2>
+
       <div class="projects-container">
+
+        <!-- Project 1 -->
         <div class="project-card">
           <h3>Portfolio Website</h3>
-          <p>My personal portfolio made using HTML, CSS, and JavaScript.</p>
+
+          <p>
+            My personal portfolio website built using HTML, CSS, and JavaScript.
+          </p>
+
+          <div class="project-links">
+            <a href="https://yashjha2510.github.io/my-portfolio/" target="_blank">Live Demo</a>
+
+            <a href="https://github.com/yashjha2510/my-portfolio.git" target="_blank">Source Code</a>
+          </div>
         </div>
+
+        <!-- Project 2 -->
         <div class="project-card">
-          <h3>Rock Paper Scissor</h3>
-          <p>A simple interactive game built with HTML, CSS, and JavaScript where the user plays against the computer.</p>
+          <h3>Rock Paper Scissors</h3>
+
+          <p>
+            Interactive browser game built using JavaScript where users play against the computer.
+          </p>
+
+          <div class="project-links">
+            <a href="#">Live Demo</a>
+
+            <a href="https://github.com/yashjha2510/rock-paper-scissor.git" target="_blank">Source Code</a>
+          </div>
         </div>
+
+        <!-- Project 3 -->
         <div class="project-card">
-          <h3>tic tac toe</h3>
-          <p>A two-player game developed using JavaScript with win/draw detection logic.</p>
+          <h3>Tic Tac Toe</h3>
+
+          <p>
+            A two-player game developed using JavaScript with proper win and draw detection logic.
+          </p>
+
+          <div class="project-links">
+            <a href="#">Live Demo</a>
+
+            <a href="https://github.com/yashjha2510/tic-tac-toe.git" target="_blank">Source Code</a>
+          </div>
         </div>
+
+        <!-- Project 4 -->
         <div class="project-card">
-          <h3>Amazone Home Clone</h3>
-          <p>Cloned the homepage of Amazon using HTML and CSS. Focused on responsive layout, navigation bar, product cards.</p>
+          <h3>Amazon Home Clone</h3>
+
+          <p>
+            Amazon homepage clone built using HTML and CSS with responsive layout and modern UI.
+          </p>
+
+          <div class="project-links">
+            <a href="#">Live Demo</a>
+
+            <a href="https://github.com/yashjha2510/amazon-homepage-clone.git" target="_blank">Source Code</a>
+          </div>
         </div>
+
+        <!-- Project 5 -->
         <div class="project-card">
-          <h3>Movie Reccomendation System</h3>
-          <p>A machine learning-based project where movies are recommended to users based on similarity.</p>
+          <h3>Movie Recommendation System</h3>
+
+          <p>
+            Machine learning based movie recommendation project using similarity algorithms.
+          </p>
+
+          <div class="project-links">
+            <a href="#">Live Demo</a>
+
+            <a href="#">Source Code</a>
+          </div>
         </div>
+
+        <!-- Project 6 -->
         <div class="project-card">
-          <h3>A Shopping Cart Site</h3>
-          <p>A mini e-commerce site where users can add/remove items to the cart, view total cost, and proceed to checkout.</p>
+          <h3>Cafe Website</h3>
+
+          <p>
+            Responsive cafe website with clean UI showcasing menu, services, and contact details.
+          </p>
+
+          <div class="project-links">
+            <a href="#">Live Demo</a>
+
+            <a href="https://github.com/yashjha2510/cafe-site.git" target="_blank">Source Code</a>
+          </div>
         </div>
+
       </div>
-      <!-- Projects Grid End -->
+
     </section>
 
-    <hr class="hrline">
+    <hr>
 
-    <!-- our services -->
-    <section class="secondsection">
-      <span class="gray">Get your work done...</span>
-      <h1>Our services</h1>
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section">
 
-      <div class="horizontalline"></div>
+      <span class="section-subtitle">Get In Touch</span>
+      <h2 class="section-title">Contact Me</h2>
 
-      <!-- Projects Grid Start -->
-      <div class="projects-container">
-        <div class="project-card">
-          <h3>Web Development</h3>
-          <p>Building responsive and user-friendly websites using modern technologies.</p>
+      <form class="contact-form">
+
+        <div class="form-row">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
         </div>
-        <div class="project-card">
-          <h3>Data Structures & Algorithms</h3>
-          <p>Writing efficient code with optimized problem-solving techniques.</p>
+
+        <div class="form-row">
+          <input type="text" placeholder="Subject" required>
+          <input type="text" placeholder="Mobile Number" required>
         </div>
-        <div class="project-card">
-          <h3>Artificial Intelligence</h3>
-          <p>Creating intelligent systems that learn and make predictions.</p>
-        </div>
-        <div class="project-card">
-          <h3>Databases</h3>
-          <p>Designing and managing structured data with SQL and DBMS concepts.</p>
-        </div>
-        <div class="project-card">
-          <h3>Cloud Computing</h3>
-          <p>Deploying and scaling applications on secure cloud platforms.</p>
-        </div>
-      </div>
-      <!-- Projects Grid End -->
+
+        <textarea placeholder="Your Message" required></textarea>
+
+        <button type="submit" class="btn">
+          Send Message
+        </button>
+
+      </form>
+
     </section>
 
   </main>
 
+  <!-- FOOTER -->
   <footer>
-    <div class="footer-div">
-      <div class="footer-first">
-        <h3>Yash Jha's Developer Portfolio</h3>
-      </div>
+
+    <div class="footer-content">
+      <h3>Yash Jha's Portfolio</h3>
+
+      <p>
+        Thank you for visiting my portfolio website.
+      </p>
     </div>
 
     <div class="footer-rights">
-      copyright &copy; www.yashjha.com | All right reserved
+      © 2026 Yash Jha. All rights reserved.
     </div>
+
   </footer>
 
-  <!-- Load library from the CDN -->
+
+  <!-- Typed.js -->
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-  <!-- Setup and start animation! -->
   <script>
     var typed = new Typed('#element', {
-      strings: ['Student &amp; a Web Developer', 'a Java Developer', 'SQL &amp; DBMS expert', '&amp; Aspiring Full Stack Developer.'],
+      strings: [
+        'Java Developer',
+        'Spring Boot Learner',
+        'Frontend Enthusiast',
+        'Aspiring Full Stack Developer'
+      ],
       typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
     });
   </script>
+
 </body>
 
 </html>
+
