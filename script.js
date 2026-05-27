@@ -4,3 +4,4 @@ var typed = new Typed('#element', {
       strings: ['Student &amp; a Web Developer', 'a Java Developer', 'SQL &amp; DBMS expert', '&amp; Aspiring Full Stack Developer.'],
       typeSpeed: 50,
     });
+
